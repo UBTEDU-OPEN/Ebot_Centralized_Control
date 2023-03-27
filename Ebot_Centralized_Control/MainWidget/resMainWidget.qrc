@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/images/ic_connected.png</file>
+        <file>res/images/ic_disconnect.png</file>
+        <file>res/images/img_logo.png</file>
+        <file>res/images/ic_guanbi_click.png</file>
+        <file>res/images/ic_guanbi_hold.png</file>
+        <file>res/images/ic_guanbi_normal.png</file>
+        <file>res/images/ic_zuixiaohua_click.png</file>
+        <file>res/images/ic_zuixiaohua_hold.png</file>
+        <file>res/images/ic_zuixiaohua_normal.png</file>
+        <file>res/images/ubtech_logo.png</file>
+        <file>res/images/ic_user_normal.png</file>
+        <file>res/images/ic_setting_normal.png</file>
+        <file>res/images/img_ubt_logo.png</file>
+        <file>res/images/ic_close.png</file>
+        <file>res/images/ic_narrow.png</file>
+        <file>res/qss/mainWidgetDefault.qss</file>
+        <file>res/images/btn_login_unable.png</file>
+        <file>res/images/btn_nav_selected.png</file>
+        <file>res/images/btn_connected_click.png</file>
+        <file>res/images/btn_connected_hover.png</file>
+        <file>res/images/btn_connected_normal.png</file>
+        <file>res/images/btn_connected_unable.png</file>
+        <file>res/images/btn_disconnect_click.png</file>
+        <file>res/images/btn_disconnect_hover.png</file>
+        <file>res/images/btn_disconnect_normal.png</file>
+        <file>res/images/btn_disconnect_unable.png</file>
+        <file>res/images/img_01.png</file>
+        <file>res/images/bg.png</file>
+    </qresource>
+</RCC>

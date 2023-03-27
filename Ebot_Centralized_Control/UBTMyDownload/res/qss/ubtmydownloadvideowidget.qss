@@ -1,0 +1,152 @@
+
+QWidget#UBTMyDownloadVedioWidget
+{
+    background-color: #FFFFFF;
+}
+
+QScrollArea#scrollArea
+{
+    background-color: #FFFFFF;
+}
+
+QWidget#scrollAreaWidgetContents
+{
+    background-color: #FFFFFF;
+}
+
+QWidget#performanceTitle
+{
+    background-color: #FFFFFF;
+}
+
+QPushButton#performanceMoreBtn[expand="false"]
+{
+    background-color: rgba(0, 169, 233, 0.2);
+    border-radius: 5px;
+    font-family: "黑体";
+    font-size: 10px;
+    color: #00A9E9;
+    padding: 3px 8px 3px 8px;
+    qproperty-iconSize: 11px 10px;
+    qproperty-icon: url(":/res/img/ic_ more_down.png");
+}
+
+QPushButton#performanceMoreBtn[expand="true"]
+{
+    background-color: rgba(0, 169, 233, 0.2);
+    border-radius: 5px;
+    font-family: "黑体";
+    font-size: 10px;
+    color: #00A9E9;
+    padding: 3px 8px 3px 8px;
+    qproperty-iconSize: 11px 10px;
+    qproperty-icon: url(":/res/img/ic_ more_up.png");
+}
+
+QWidget#performanceContent
+{
+    background-color: #FFFFFF;
+}
+
+QWidget#videoTitle
+{
+    background-color: #FFFFFF;
+}
+
+QPushButton#videoMoreBtn[expand="false"]
+{
+    background-color: rgba(0, 169, 233, 0.2);
+    border-radius: 5px;
+    font-family: "黑体";
+    font-size: 10px;
+    color: #00A9E9;
+    padding: 3px 8px 3px 8px;
+    qproperty-iconSize: 11px 10px;
+    qproperty-icon: url(":/res/img/ic_ more_down.png");
+}
+
+QPushButton#videoMoreBtn[expand="true"]
+{
+    background-color: rgba(0, 169, 233, 0.2);
+    border-radius: 5px;
+    font-family: "黑体";
+    font-size: 10px;
+    color: #00A9E9;
+    padding: 3px 8px 3px 8px;
+    qproperty-iconSize: 11px 10px;
+    qproperty-icon: url(":/res/img/ic_ more_up.png");
+}
+
+QWidget#videoContent
+{
+    background-color: #FFFFFF;
+}
+
+QLabel#seperator
+{
+    border: none;
+    background-color: #F4F5F5;
+}
+
+QPushButton#videoSearchIconBtn[showAlone="true"], QPushButton#performanceSearchIconBtn[showAlone="true"]
+{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    qproperty-icon: url(:/res/images/ic_search.png);
+    qproperty-iconSize: 16px 16px;
+    background-color: #F4F5F5;
+}
+
+QPushButton#videoSearchIconBtn[showAlone="false"], QPushButton#performanceSearchIconBtn[showAlone="false"]
+{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    qproperty-icon: url(:/res/images/ic_search.png);
+    qproperty-iconSize: 16px 16px;
+    background-color: #F4F5F5;
+}
+
+QLineEdit#videoSearch, QLineEdit#performanceSearch
+{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #F4F5F5;
+}
+
+QLabel#spacer, QLabel#spacer_2
+{
+    background: transparent;
+    border: none;
+}
+
+QLabel#videoTitleLbl, QLabel#performancTitleLbl {
+    font-family: "黑体";
+    font-size: 16px;
+    font-weight: bold;
+    color: #395571;
+}
+
+QScrollBar:vertical {
+    width: 10px;
+    border: none;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}
+
+
+
+

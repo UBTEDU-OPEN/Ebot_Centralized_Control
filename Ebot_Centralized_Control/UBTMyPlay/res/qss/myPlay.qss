@@ -1,0 +1,630 @@
+
+/*******************UBTMyPlayWidget 模块*********************/
+
+
+/*UBTMyPlayWidget窗体背景*/
+
+QWidget#UBTMyPlayWidget
+{
+    background-color:#F0F0F0;
+    border: none;
+}
+
+QWidget#fileControlWidget
+{
+    background-color:#ffffff;
+    border: none;
+}
+
+
+QWidget#RobotControlWidget
+{
+    background-color:#ffffff;
+}
+
+QWidget#PlayControlWidget
+{
+    background-color:#ffffff;
+}
+
+QWidget#widgetNotConnected
+{
+    background-color:#ffffff;
+}
+
+
+/*唤醒*/
+QPushButton#pBWakeUp:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_wakeup_normal.png);
+}
+QPushButton#pBWakeUp:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_wakeup_unable.png);
+}
+QPushButton#pBWakeUp:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_wakeup_hover.png);
+
+}
+QPushButton#pBWakeUp:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_wakeup_click.png);
+}
+
+/*测试*/
+QPushButton#pBTest:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_test_normal.png);
+}
+QPushButton#pBTest:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_test_unable.png);
+}
+QPushButton#pBTest:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_test_hover.png);
+
+}
+QPushButton#pBTest:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_test_click.png);
+}
+
+/*电量*/
+QPushButton#batteryCapacityBtn:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_battery_normal.png);
+}
+QPushButton#batteryCapacityBtn:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_battery_unable.png);
+}
+QPushButton#batteryCapacityBtn:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_battery_hover.png);
+
+}
+QPushButton#batteryCapacityBtn:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_battery_click.png);
+}
+
+/*休眠*/
+QPushButton#pBRest:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_dormant_normal.png);
+}
+QPushButton#pBRest:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_dormant_unable.png);
+}
+QPushButton#pBRest:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_dormant_hover.png);
+
+}
+QPushButton#pBRest:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_dormant_click.png);
+}
+
+/*关机*/
+QPushButton#pBPowerOff:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_turnoff_normal.png);
+}
+QPushButton#pBPowerOff:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_turnoff_unable.png);
+}
+QPushButton#pBPowerOff:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_turnoff_hover.png);
+
+}
+QPushButton#pBPowerOff:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_turnoff_click.png);
+}
+
+/*上一首*/
+QPushButton#pBPre:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_last_normal.png);
+}
+QPushButton#pBPre:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_last_disable.png);
+}
+QPushButton#pBPre:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_last_hold.png);
+
+}
+QPushButton#pBPre:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_last_click.png);
+}
+
+/*播放顺序*/
+/* Random */
+QPushButton#playOrderBtn[order="0"]:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_random_normal.png);
+}
+QPushButton#playOrderBtn[order="0"]:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_random_unable.png);
+}
+QPushButton#playOrderBtn[order="0"]:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_random_hover.png);
+}
+QPushButton#playOrderBtn[order="0"]:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_random_click.png);
+}
+/* loop */
+QPushButton#playOrderBtn[order="1"]:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_list_loop_normal.png);
+}
+QPushButton#playOrderBtn[order="1"]:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_list_loop_unable.png);
+}
+QPushButton#playOrderBtn[order="1"]:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_list_loop_hover.png);
+}
+QPushButton#playOrderBtn[order="1"]:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_list_loop_click.png);
+}
+/* Single */
+QPushButton#playOrderBtn[order="2"]:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_single_loop_normal.png);
+}
+QPushButton#playOrderBtn[order="2"]:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_single_loop_unable.png);
+}
+QPushButton#playOrderBtn[order="2"]:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_single_loop_hover.png);
+}
+QPushButton#playOrderBtn[order="2"]:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_single_loop_click.png);
+}
+
+/*播放*/
+QPushButton#pBPlay:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_play_normal.png);
+}
+QPushButton#pBPlay:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_play_unable.png);
+}
+QPushButton#pBPlay:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_play_hover.png);
+
+}
+QPushButton#pBPlay:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_play_click.png);
+}
+
+/*复位*/
+QPushButton#pBReset:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_reset_normal.png);
+}
+QPushButton#pBReset:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_reset_unable.png);
+}
+QPushButton#pBReset:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_reset_hover.png);
+
+}
+QPushButton#pBReset:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_reset_click.png);
+}
+
+/*下一首*/
+QPushButton#pBNext:enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_next_normal.png);
+}
+QPushButton#pBNext:!enabled
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_next_disable.png);
+}
+QPushButton#pBNext:hover
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_next_hold.png);
+
+}
+QPushButton#pBNext:pressed
+{
+    background-color:#ffffff;
+    border-image: url(:/res/images/ic_next_click.png);
+}
+
+
+/*唤醒文本*/
+QLabel#labelWakeup:enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+QLabel#labelWakeup:!enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+/*休眠文本*/
+QLabel#labelRest:enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+QLabel#labelRest:!enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+
+/*关机文本*/
+QLabel#labelPowerOff:enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+QLabel#labelPowerOff:!enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+
+/*测试文本*/
+QLabel#labelTest:enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+QLabel#labelTest:!enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+/*电量文本*/
+QLabel#labelBatteryCapacity:enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+QLabel#labelBatteryCapacity:!enabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #395571;
+    border:none;
+    background-color:#ffffff;
+}
+
+/*添加动作*/
+QPushButton#pBAddAction:enabled
+{
+    border-image: url(:/res/images/btn_add_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#pBAddAction:!enabled
+{
+    border-image: url(:/res/images/btn_add_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#pBAddAction:hover
+{
+    border-image: url(:/res/images/btn_add_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#pBAddAction:pressed
+{
+    border-image: url(:/res/images/btn_add_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/*同步动作*/
+QPushButton#pBSynchronize:enabled
+{
+    border-image: url(:/res/images/btn_synchro_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#pBSynchronize:!enabled
+{
+    border-image: url(:/res/images/btn_synchro_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#pBSynchronize:hover
+{
+    border-image: url(:/res/images/btn_synchro_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#pBSynchronize:pressed
+{
+    border-image: url(:/res/images/btn_synchro_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/*删除动作*/
+QPushButton#pBEmptyList
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FF7777;
+    qproperty-iconSize: 18px 18px;
+    qproperty-icon: url(:/res/images/ic_empty.png);
+}
+
+QPushButton#pBEmptyList:disabled
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    qproperty-iconSize: 18px 18px;
+    qproperty-icon: url(:/res/images/ic_empty_unable.png);
+}
+
+QPushButton#pBEmptyList:hover
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FF7777;
+    qproperty-iconSize: 18px 18px;
+    qproperty-icon: url(:/res/images/ic_empty.png);
+}
+
+QPushButton#pBEmptyList:pressed
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FF7777;
+    qproperty-iconSize: 18px 18px;
+    qproperty-icon: url(:/res/images/ic_empty.png);
+}
+
+QListWidget#listWidgetAction
+{
+    background: transparent;
+    background-color: #ffffff;
+    border:none;
+}
+QListWidget#listWidgetAction::item
+{
+    height: 35px;
+    color: #294765;
+    font:14px;
+    padding-left: 20px;
+    background: #ffffff;
+}
+QListWidget#listWidgetAction::item:selected
+{
+    height: 35px;
+    color: #3EA5D2;
+    font:14px;
+    padding-left: 20px;
+    background: #ffffff;
+}
+
+QListView#actionListView
+{
+    background-color: #F8FAFA;
+    alternate-background-color: #ffffff;
+    border:none;
+}
+QListView#actionListView::item
+{
+    height: 35px;
+    color: #294765;
+    font:14px;
+}
+QListView#actionListView::item:selected
+{
+    height: 35px;
+    color: #00A9E9;
+    font:14px;
+}
+
+/* 设备未连接 */
+QWidget#notConnectedPage
+{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+QLabel#labelNotConnectedImage
+{
+    border-image: url(:/res/images/img_disconnect_tip.png);
+    border:0px;
+}
+
+QLabel#labelNotConnectedText1
+{
+    background: transparent;
+    font:16px;
+    color: #294765;
+}
+
+QLabel#labelNotConnectedText2
+{
+    background: transparent;
+    font:16px;
+    color: #294765;
+}
+
+/* 舞蹈动作列表空 */
+QWidget#noFilePage
+{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+QLabel#emptyListImage_0
+{
+    border-image: url(:/res/images/img_no_dance.png);
+    border:0px;
+}
+
+QLabel#emptyListImage_1
+{
+    border-image: url(:/res/images/img_arrow.png);
+    border:0px;
+}
+
+QLabel#emptyListText_0
+{
+    background: transparent;
+    font:16px;
+    color: #294765;
+}
+
+QLabel#emptyListText_1
+{
+    background: transparent;
+    font:16px;
+    color: #294765;
+}
+
+QScrollBar:vertical {
+    width: 15px;
+    border: none;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}
+

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UBTPlayer</class>
+ <widget class="QWidget" name="UBTPlayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>696</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>696</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="UBTPlayerControl" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>416</y>
+     <width>696</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>696</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>696</width>
+     <height>24</height>
+    </size>
+   </property>
+   <widget class="QPushButton" name="UBTPlayerPlayPauseBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>3</y>
+      <width>18</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSlider" name="UBTPlayerDurationSlider">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>6</y>
+      <width>531</width>
+      <height>11</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>531</width>
+      <height>11</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>530</width>
+      <height>11</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="UBTPlayerDurationLbl">
+    <property name="geometry">
+     <rect>
+      <x>604</x>
+      <y>0</y>
+      <width>82</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>82</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>82</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="UBTPlayerHeader" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>696</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>696</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>696</width>
+     <height>24</height>
+    </size>
+   </property>
+   <widget class="QPushButton" name="UBTPlayerCloseButton">
+    <property name="geometry">
+     <rect>
+      <x>666</x>
+      <y>2</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

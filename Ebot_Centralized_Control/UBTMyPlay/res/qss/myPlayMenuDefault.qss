@@ -1,0 +1,29 @@
+/************ popup menu begin ************/
+
+QMenu {
+    min-width: 210px;
+    background-color: rgba(60,87,115,1);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+}
+
+QMenu::item:selected {
+    min-width: 210px;
+    margin: 1px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    height: 34px;
+    background-color: rgba(29,53,76,1);
+    border: none;
+}
+
+QMenu::item {
+    min-width: 210px;
+    margin: 1px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    height: 34px;
+    background-color: rgba(41,71,101,1);
+    border: none;
+}
+

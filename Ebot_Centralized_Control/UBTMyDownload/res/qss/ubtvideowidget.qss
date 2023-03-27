@@ -1,0 +1,42 @@
+UBTVideoWidget
+{
+    background-color: #FFFFFF;
+}
+
+QPushButton#downloadBtn
+{
+    border-image: url(:/res/images/btn_download_normal.png);
+}
+
+QPushButton#downloadBtn:hover
+{
+    border-image: url(:/res/images/btn_download_click.png);
+}
+
+QPushButton#downloadBtn:pressed
+{
+    border-image: url(:/res/images/btn_download_click.png);
+}
+
+QLabel#videoName
+{
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QLabel#videoPic
+{
+    background-color:#ffffff;border-image:url(:/res/images/img_default.png);
+}
+
+QPushButton#playBtn
+{
+    border-image: url(:/res/img/ic_play.png);
+}
+
+QWidget#videoWidgetCover
+{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+}

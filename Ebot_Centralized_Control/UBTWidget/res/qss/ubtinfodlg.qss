@@ -1,0 +1,24 @@
+UBTInfoDlg#UBTInfoDlg {
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+QWidget#UBTInfoDlgIconContainer {
+    border: none;
+    background: transparent;
+}
+
+QLabel#dlgIcon[succ="true"] {
+    border-image: url(:/res/image/success.png);
+}
+
+QLabel#dlgIcon[succ="false"] {
+    border-image: url(:/res/image/fail.png);
+}
+
+QLabel#dlgInfo {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+}

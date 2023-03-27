@@ -1,0 +1,12 @@
+#ifndef UBTPLAYER_GLOBAL_H
+#define UBTPLAYER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(UBTPLAYER_LIBRARY)
+#  define UBTPLAYERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define UBTPLAYERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // UBTPLAYER_GLOBAL_H

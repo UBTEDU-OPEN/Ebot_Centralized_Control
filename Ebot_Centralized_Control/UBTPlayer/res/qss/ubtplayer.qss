@@ -1,0 +1,51 @@
+QPushButton#UBTPlayerCloseButton {
+    border-image: url(:/res/images/ic_player_close.png);
+    /*border-image: url(:/res/images/ic_user_normal.png);*/
+}
+
+QWidget#UBTPlayerControl {
+    background: transparent;
+}
+
+QWidget#UBTPlayerHeader {
+    background: transparent;
+}
+
+QPushButton#UBTPlayerPlayPauseBtn[playing="true"] {
+    border-image: url(:/res/images/ic_stop.png);
+}
+
+QPushButton#UBTPlayerPlayPauseBtn[playing="false"] {
+    border-image: url(:/res/images/ic_play.png);
+}
+
+QSlider::groove:horizontal {
+    border: none;
+    background: #E0E5E7;
+    height: 3px;
+    border-radius: 1px;
+}
+
+QSlider#UBTPlayerDurationSlider::handle {
+    background: url(:/res/images/ic_adjustment.png);
+    width: 10px;
+    margin-top: -3px;
+    margin-bottom: -4px;
+}
+
+QSlider#UBTPlayerDurationSlider::sub-page:horizontal {
+    background: #00A9E9;;
+    border: none;
+}
+
+QSlider#UBTPlayerDurationSlider::add-page:horizontal {
+    background: #E0E5E7;
+    border: none;
+}
+
+QLabel#UBTPlayerDurationLbl {
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+

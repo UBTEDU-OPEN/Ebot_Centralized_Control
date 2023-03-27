@@ -1,0 +1,73 @@
+UBTDownloadListItemWidget#UBTDownloadListItemWidget
+{
+    height: 34px;
+    background: transparent;
+}
+
+UBTDownloadListItemWidget#UBTDownloadListItemWidget > QCheckBox#downloadItemName {
+    font-family: "黑体";
+    font-size: 12px;
+    color: #294765;
+}
+
+UBTDownloadListItemWidget#UBTDownloadListItemWidget > QCheckBox#downloadItemName::indicator
+{
+    image: url(:/res/images/ic_unselected.png);
+    width: 14px;
+    height: 14px;
+}
+
+UBTDownloadListItemWidget#UBTDownloadListItemWidget > QCheckBox#downloadItemName::indicator:checked
+{
+    image: url(:/res/images/ic_selection.png);
+    width: 14px;
+    height: 14px;
+    font-family: "黑体";
+    font-size: 12px;
+    color: #294765;
+}
+
+UBTDownloadListItemWidget#UBTDownloadListItemWidget > QLabel#statusLbl
+{
+    font-family: "黑体";
+    font-size: 12px;
+    color: #AFBCCA;
+}
+
+UBTDownloadListItemWidget#UBTDownloadListItemWidget > QPushButton#videoRedownloadBtn
+{
+    border-image: url(:/res/img/ic_refresh.png);
+}
+
+UBTDownloadListItemWidget#ListHeader
+{
+    background-color: #E0E5E7;
+    height: 24px;
+}
+
+UBTDownloadListItemWidget#ListHeader > QCheckBox#downloadItemName {
+    font-family: "黑体";
+    font-size: 12px;
+    color: #AFBCCA;
+}
+
+UBTDownloadListItemWidget#ListHeader > QCheckBox#downloadItemName::indicator
+{
+    image: url(:/res/images/ic_unselected.png);
+    width: 14px;
+    height: 14px;
+}
+
+UBTDownloadListItemWidget#ListHeader > QCheckBox#downloadItemName::indicator:checked
+{
+    image: url(:/res/images/ic_selection.png);
+    width: 14px;
+    height: 14px;
+}
+
+UBTDownloadListItemWidget#ListHeader > QLabel#statusLbl
+{
+    font-family: "黑体";
+    font-size: 12px;
+    color: #AFBCCA;
+}

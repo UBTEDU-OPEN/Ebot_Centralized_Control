@@ -1,0 +1,98 @@
+UBTConfirmDlg#UBTConfirmDlg {
+    border-image: url(:/res/image/img_popup.png);
+}
+
+QWidget#UBTConfirmDlgSpacer0, QWidget#UBTConfirmDlgSpacer1 {
+    border: none;
+    background: #FFFFFF;
+}
+
+QLabel#UBTConfirmDlgTitle {
+    font-family: "黑体";
+    font-size: 18px;
+    color: #294765;
+    background: #FFFFFF;
+}
+
+QLabel#UBTConfirmDlgContent {
+    font-family: "黑体";
+    font-size: 18px;
+    color: #294765;
+    background: #FFFFFF;
+}
+
+QPushButton#UBTConfirmDlgReject {
+    border-top: 1px solid #EEEDED;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    background: #FFFFFF;
+    font-family: "黑体";
+    font-size: 18px;
+    color: #294765;
+}
+
+QPushButton#UBTConfirmDlgReject:pressed {
+    border-top: 1px solid #EEEDED;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    background: #EDEDED;
+    font-family: "黑体";
+    font-size: 18px;
+    color: #294765;
+}
+
+QPushButton#UBTConfirmDlgAccept[single="false"] {
+    border-top: 1px solid #EEEDED;
+    border-bottom: none;
+    border-left: 1px solid #EEEDED;;
+    border-right: none;
+    border-bottom-right-radius: 8px;
+    background: #FFFFFF;
+    font-family: "黑体";
+    font-size: 18px;
+    color: #00A9E9;
+}
+
+QPushButton#UBTConfirmDlgAccept:pressed[single="false"] {
+    border-top: 1px solid #EEEDED;
+    border-bottom: none;
+    border-left: 1px solid #EEEDED;;
+    border-right: none;
+    border-bottom-right-radius: 8px;
+    background: #EDEDED;
+    font-family: "黑体";
+    font-size: 18px;
+    color: #00A9E9;
+}
+
+QPushButton#UBTConfirmDlgAccept[single="true"] {
+    border-top: 1px solid #EEEDED;
+    border-bottom: none;
+    border-left: none;;
+    border-right: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #FFFFFF;
+    font-family: "黑体";
+    font-size: 18px;
+    color: #00A9E9;
+}
+
+QPushButton#UBTConfirmDlgAccept:pressed[single="true"] {
+    border-top: 1px solid #EEEDED;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #EDEDED;
+    font-family: "黑体";
+    font-size: 18px;
+    color: #00A9E9;
+}

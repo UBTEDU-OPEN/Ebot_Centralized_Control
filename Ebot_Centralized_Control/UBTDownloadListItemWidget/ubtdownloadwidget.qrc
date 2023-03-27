@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/ubtdownloadwidget.qss</file>
+    </qresource>
+</RCC>

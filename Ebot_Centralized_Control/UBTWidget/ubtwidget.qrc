@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/image/fail.png</file>
+        <file>res/image/success.png</file>
+        <file>res/qss/ubtinfodlg.qss</file>
+        <file>res/qss/ubtconfirmdlg.qss</file>
+        <file>res/image/img_popup.png</file>
+    </qresource>
+</RCC>

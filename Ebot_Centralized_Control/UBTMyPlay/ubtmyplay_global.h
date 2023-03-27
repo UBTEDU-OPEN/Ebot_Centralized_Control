@@ -1,0 +1,12 @@
+#ifndef UBTMYPLAY_GLOBAL_H
+#define UBTMYPLAY_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(UBTMYPLAY_LIBRARY)
+#  define UBTMYPLAYSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define UBTMYPLAYSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // UBTMYPLAY_GLOBAL_H

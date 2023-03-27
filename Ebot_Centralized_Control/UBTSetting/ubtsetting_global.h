@@ -1,0 +1,12 @@
+#ifndef UBTSETTING_GLOBAL_H
+#define UBTSETTING_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(UBTSETTING_LIBRARY)
+#  define UBTSETTINGSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define UBTSETTINGSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // UBTSETTING_GLOBAL_H

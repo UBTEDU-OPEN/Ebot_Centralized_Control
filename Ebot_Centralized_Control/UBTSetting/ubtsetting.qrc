@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/image/ic_desk_80.png</file>
+        <file>res/image/img_strategy.png</file>
+        <file>res/qss/ubtsetting.qss</file>
+        <file>res/image/btn_upgrade_click.png</file>
+        <file>res/image/btn_upgrade_hover.png</file>
+        <file>res/image/btn_upgrade_normal.png</file>
+        <file>res/image/btn_upgrade_unable.png</file>
+        <file>res/image/btn_choice1.png</file>
+        <file>res/image/btn_choice2.png</file>
+        <file>res/image/btn_setup1_click.png</file>
+        <file>res/image/btn_setup1_hover.png</file>
+        <file>res/image/btn_setup1_normal.png</file>
+        <file>res/image/btn_setup2_click.png</file>
+        <file>res/image/btn_setup2_hover.png</file>
+        <file>res/image/btn_setup2_normal.png</file>
+        <file>res/image/manual.png</file>
+    </qresource>
+</RCC>

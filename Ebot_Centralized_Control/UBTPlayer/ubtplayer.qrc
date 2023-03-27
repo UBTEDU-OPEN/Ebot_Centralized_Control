@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/images/ic_adjustment.png</file>
+        <file>res/images/ic_player_close.png</file>
+        <file>res/images/ic_play.png</file>
+        <file>res/images/ic_stop.png</file>
+        <file>res/qss/ubtplayer.qss</file>
+    </qresource>
+</RCC>

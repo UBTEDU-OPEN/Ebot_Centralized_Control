@@ -1,0 +1,44 @@
+UBTPrivacyAgreementDlg#UBTPrivacyAgreementDlg, QWidget#UBTPrivacyAgreementDlgTitle, QTextEdit#UBTPrivacyAgreementDlgContent
+{
+    border: none;
+    background: #FFFFFF;
+}
+QTextEdit#UBTPrivacyAgreementDlgContent {
+    font-family: "黑体";
+    font-size: 14px;
+    color: #294765;
+    line-height: 22px;
+}
+QPushButton#UBTPrivacyAgreementDlgCloseBtn {
+    border-image: url(:/res/images/ic_close_1.png);
+}
+QPushButton#UBTPrivacyAgreementDlgCloseBtn:hover {
+    border-image: url(:/res/images/ic_close_1.png);
+}
+QPushButton#UBTPrivacyAgreementDlgCloseBtn:pressed {
+    border-image: url(:/res/images/ic_close_1.png);
+}
+QWidget#UBTPrivacyAgreementDlgTitle {
+    font-family: "黑体";
+    font-size: 20px;
+    font-weight: bold;
+    color: #294765;
+}
+
+QScrollBar:vertical {
+    width: 15px;
+    border: none;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}
+

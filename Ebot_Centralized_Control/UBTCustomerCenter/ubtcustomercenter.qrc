@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/images/btn_ modify_unable.png</file>
+        <file>res/images/btn_modify_click.png</file>
+        <file>res/images/btn_modify_hover.png</file>
+        <file>res/images/btn_modify_normal.png</file>
+        <file>res/images/btn_signin_click.png</file>
+        <file>res/images/btn_signin_hover.png</file>
+        <file>res/images/btn_signin_normal.png</file>
+        <file>res/images/btn_signin_unable.png</file>
+        <file>res/images/btn_signout_click.png</file>
+        <file>res/images/btn_signout_hover.png</file>
+        <file>res/images/btn_signout_normal.png</file>
+        <file>res/images/btn_signout_unable.png</file>
+        <file>res/images/ic_account.png</file>
+        <file>res/images/ic_close_1.png</file>
+        <file>res/images/ic_closeeye.png</file>
+        <file>res/images/ic_delete.png</file>
+        <file>res/images/ic_delete_unable.png</file>
+        <file>res/images/ic_openeye.png</file>
+        <file>res/images/ic_password.png</file>
+        <file>res/images/ic_selection.png</file>
+        <file>res/images/ic_unselected.png</file>
+        <file>res/images/img_avatar_default.png</file>
+        <file>res/images/img_bg.png</file>
+        <file>res/qss/ubtcustomercenter.qss</file>
+        <file>res/qss/ubtprivacyagreementdlg.qss</file>
+        <file>res/privacyAgreement.txt</file>
+    </qresource>
+</RCC>

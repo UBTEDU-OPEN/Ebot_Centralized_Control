@@ -1,0 +1,4 @@
+﻿Release/
+Debug/
+*.user
+build/

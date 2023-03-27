@@ -1,0 +1,133 @@
+QWidget#manualPage, QWidget#versionPage, QWidget#titleWidget
+{
+    border: none;
+    background: #FFFFFF;
+}
+
+QPushButton#manualBtn
+{
+    border-image: url(:/res/image/btn_choice1.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #294765;
+}
+QPushButton#manualBtn:checked
+{
+    border-image: url(:/res/image/btn_setup1_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#manualBtn:hover
+{
+    border-image: url(:/res/image/btn_setup1_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#manualBtn:clicked
+{
+    border-image: url(:/res/image/btn_setup1_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#versionBtn
+{
+    border-image: url(:/res/image/btn_choice2.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #294765;
+}
+QPushButton#versionBtn:checked
+{
+    border-image: url(:/res/image/btn_setup2_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#versionBtn:hover
+{
+    border-image: url(:/res/image/btn_setup2_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#versionBtn:clicked
+{
+    border-image: url(:/res/image/btn_setup2_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#upgradeBtn:enabled
+{
+    border-image: url(:/res/images/btn_signin_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#upgradeBtn:disabled
+{
+    border-image: url(:/res/images/btn_signin_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#upgradeBtn:hover
+{
+    border-image: url(:/res/images/btn_signin_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#upgradeBtn:pressed
+{
+    border-image: url(:/res/images/btn_signin_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QLabel#versionIcon
+{
+    background: url(:/res/image/ic_desk_80.png);
+}
+
+/*
+QLabel#manualIcon
+{
+    background: url(:/res/image/img_strategy.png);
+}
+
+QLabel#manualText, QLabel#versionText
+{
+    border: none;
+    background: transparent;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+*/
+
+QScrollBar:vertical {
+    width: 10px;
+    border: none;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}

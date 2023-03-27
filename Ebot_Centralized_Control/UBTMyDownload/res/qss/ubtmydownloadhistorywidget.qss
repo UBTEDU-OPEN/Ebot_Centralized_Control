@@ -1,0 +1,105 @@
+QWidget#downloadHistoryTitle, QStackedWidget#downloadHistoryContent, QWidget#downloadHistorySavePath, QWidget#downloadHistoryTitle, QWidget#downloadVideoListContainer
+{
+    background: #FFFFFF;
+    border: none;
+}
+
+QLabel#videoDownloadTitleLbl {
+    font-family: "黑体";
+    font-size: 16px;
+    font-weight: bold;
+    color: #395571;
+}
+
+QPushButton#downloadHistoryDelBtn
+{
+    border-image: url(:/res/img/ic_delete.png);
+}
+
+QPushButton#downloadHistoryDelBtn:disabled
+{
+    border-image: url(:/res/img/ic_delete_unable.png);
+}
+
+QPushButton#savePathModifyBtn
+{
+    border-image: url(:/res/images/btn_modify_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#savePathModifyBtn:disable
+{
+    border-image: url(:/res/images/btn_modify_unable.png);
+}
+
+QPushButton#savePathModifyBtn:pressed
+{
+    border-image: url(:/res/images/btn_modify_click.png);
+}
+
+QPushButton#savePathModifyBtn:hover
+{
+    border-image: url(:/res/images/btn_modify_hover.png);
+}
+
+QLineEdit#savePathLineEdit
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #F4F5F5;
+    border-radius: 15px;
+    font-family: "黑体";
+    font-size: 12px;
+    color: #294765;
+}
+
+QLabel#savePathLbl
+{
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QListWidget#downloadVideoList
+{
+    background-color: #F8FAFA;
+    alternate-background-color: #ffffff;
+    border:none;
+}
+QListWidget#downloadVideoList::item
+{
+    height: 35px;
+    color: #294765;
+    font:14px;
+}
+
+QLabel#emptyVideoDownloadIcon
+{
+    border-image: url(:/res/img/img_no_dance.png);
+}
+
+QLabel#emptyVideoDownloadText_0, QLabel#emptyVideoDownloadText_1
+{
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QScrollBar:vertical {
+    width: 10px;
+    border: none;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}

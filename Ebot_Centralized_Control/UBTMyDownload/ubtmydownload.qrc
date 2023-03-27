@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/img/btn_ add_unable.png</file>
+        <file>res/img/btn_add_click.png</file>
+        <file>res/img/btn_add_hover.png</file>
+        <file>res/img/btn_add_normal.png</file>
+        <file>res/img/btn_download_click.png</file>
+        <file>res/img/btn_download_hover.png</file>
+        <file>res/img/btn_download_normal.png</file>
+        <file>res/img/ic_ more_down.png</file>
+        <file>res/img/ic_ more_up.png</file>
+        <file>res/img/ic_delete.png</file>
+        <file>res/img/ic_delete_unable.png</file>
+        <file>res/img/ic_loding.png</file>
+        <file>res/img/ic_play.png</file>
+        <file>res/img/ic_refresh.png</file>
+        <file>res/img/ic_search.png</file>
+        <file>res/img/ic_selection.png</file>
+        <file>res/img/ic_unselected.png</file>
+        <file>res/img/img_no_dance.png</file>
+        <file>res/qss/ubtmydownloadvideowidget.qss</file>
+        <file>res/qss/ubtvideowidget.qss</file>
+        <file>res/qss/ubtmydownloadhistorywidget.qss</file>
+    </qresource>
+</RCC>

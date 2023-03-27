@@ -1,0 +1,833 @@
+/**************************************** loginPage ************************************/
+QWidget#loginPage {
+    border: none;
+    background-color: #FF00FF;
+    background-image: url(:/res/images/img_bg.png);
+}
+
+QPushButton#accountIconBtn {
+    qproperty-icon: url(:/res/images/ic_account.png);
+    qproperty-iconSize: 22px 22px;
+    background-color: #FFFFFF;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+QLineEdit#loginAccount {
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 14px;
+}
+
+QPushButton#pwdIconBtn {
+    qproperty-icon: url(:/res/images/ic_password.png);
+    qproperty-iconSize: 22px 22px;
+    background-color: #FFFFFF;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+QPushButton#loginToRegister {
+    border: none;
+    background: transparent;
+    color: #00A9E9;
+    font-family: "黑体";
+    font-size: 16px;
+    text-align: right;
+}
+
+QLabel#seperator {
+    border: none;
+    background-color: #979797;
+}
+
+QPushButton#loginForgetPwd {
+    border: none;
+    background: transparent;
+    color: #00A9E9;
+    font-family: "黑体";
+    font-size: 16px;
+    text-align: left;
+}
+
+QLineEdit#loginPwd {
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    lineedit-password-character: 42;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 14px;
+}
+
+QPushButton#loginSubmit {
+    border-image: url(:/res/images/btn_signin_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#loginSubmit:disabled {
+    border-image: url(:/res/images/btn_signin_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#loginSubmit:hover {
+    border-image: url(:/res/images/btn_signin_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#loginSubmit:pressed {
+    border-image: url(:/res/images/btn_signin_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/******************************** registerPage ***********************************/
+QWidget#registerPage
+{
+    border: none;
+    background-image: url(:/res/images/img_bg.png);
+}
+
+QTabWidget#registerTabWidget::pane
+{
+    border: none;
+    background: transparent;
+}
+
+QTabWidget#registerTabWidget::tab-bar
+{
+    border: none;
+    background: transparent;
+}
+
+QWidget#registerMobile
+{
+    border: none;
+    background: transparent;
+}
+
+QWidget#registerEMail
+{
+    border: none;
+    background: transparent;
+}
+
+QTabWidget#registerTabWidget QTabBar::tab:!selected
+{
+    width: 65px;
+    height: 25px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    color: #B2B9C0;
+    font-family: "黑体";
+    font-size: 16px;
+}
+
+QTabWidget#registerTabWidget QTabBar::tab:selected
+{
+    width: 65px;
+    height: 25px;
+    margin: 5px;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00A9E9;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 16px;
+}
+
+QPushButton#mobileAccountLabelBtn, QPushButton#vscodeLableBtn, QPushButton#pwdLabelBtn
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #FFFFFF;
+    text-align: left;
+    padding-left: 15px;
+}
+QLineEdit#registerMobileAccount, QLineEdit#registerMobileVCode, QLineEdit#registerMobilePwd
+{
+    border: none;
+    lineedit-password-character: 42;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 14px;
+}
+QPushButton#registerMobileGetVCode
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #00A9E9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#registerMobileGetVCode:disabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#registerMobileShowPwd[showPwd="false"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_closeeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#registerMobileShowPwd[showPwd="true"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_openeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+
+QCheckBox#registerMobileCheck, QCheckBox#registerEMailCheck {
+    font-family: "黑体";
+    font-size: 14px;
+    color: #294765;
+}
+QCheckBox#registerMobileCheck::indicator,  QCheckBox#registerEMailCheck::indicator{
+    image: url(:/res/images/ic_unselected.png);
+    width: 14px;
+    height: 14px;
+}
+QCheckBox#registerMobileCheck::indicator:checked, QCheckBox#registerEMailCheck::indicator:checked {
+    image: url(:/res/images/ic_selection.png);
+    width: 14px;
+    height: 14px;
+}
+QPushButton#mobilePrivacyAgreement
+{
+    border: none;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #00A9E9;
+}
+QPushButton#registerMobileRetLogin, QPushButton#registerEMailRetLogin
+{
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #00A9E9;
+    text-align: left;
+}
+QPushButton#registerMobileSubmit
+{
+    border-image: url(:/res/images/btn_signin_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#registerMobileSubmit:hover
+{
+    border-image: url(:/res/images/btn_signin_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#registerMobileSubmit:pressed
+{
+    border-image: url(:/res/images/btn_signin_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#registerMobileSubmit:disabled
+{
+    border-image: url(:/res/images/btn_signin_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#emailAccountLabelBtn, QPushButton#vscodeLableBtn_2, QPushButton#pwdLabelBtn_2
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #FFFFFF;
+    text-align: left;
+    padding-left: 15px;
+}
+QLineEdit#registerEMailAccount, QLineEdit#registerEMailVCode, QLineEdit#registerEMailPwd
+{
+    border: none;
+    lineedit-password-character: 42;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 14px;
+}
+QPushButton#registerEMailGetVCode
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #00A9E9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#registerEMailGetVCode:disabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#registerEMailShowPwd[showPwd="false"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_closeeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    lineedit-password-character: 42;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#registerEMailShowPwd[showPwd="true"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_openeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    lineedit-password-character: 42;
+    text-align: right;
+    padding-right: 15px;
+}
+QCheckBox#registerEMailCheck::indicator
+{
+    image: url(:/res/images/ic_unselected.png);
+    width: 14px;
+    height: 14px;
+}
+QCheckBox#registerEMailCheck::indicator:checked
+{
+    image: url(:/res/images/ic_selection.png);
+    width: 14px;
+    height: 14px;
+}
+QPushButton#emailPrivacyAgreement
+{
+    border: none;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #00A9E9;
+}
+QPushButton#registerEMailRetLogi {
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #00A9E9;
+    text-align: left;
+}
+QPushButton#registerEMailSubmit
+{
+    border-image: url(:/res/images/btn_signin_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#registerEMailSubmit:hover
+{
+    border-image: url(:/res/images/btn_signin_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#registerEMailSubmit:pressed
+{
+    border-image: url(:/res/images/btn_signin_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#registerEMailSubmit:disabled
+{
+    border-image: url(:/res/images/btn_signin_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/********************************* retrievePage *******************************/
+QWidget#retrievePage
+{
+    border: none;
+    background-image: url(:/res/images/img_bg.png);
+}
+QTabWidget#retrieveTabWidget::pane
+{
+    border: none;
+    background: transparent;
+}
+
+QTabWidget#retrieveTabWidget::tab-bar
+{
+    border: none;
+    background: transparent;
+}
+
+QWidget#retrieveMobile
+{
+    border: none;
+    background: transparent;
+}
+
+QWidget#retrieveEMail
+{
+    border: none;
+    background: transparent;
+}
+
+QTabWidget#retrieveTabWidget QTabBar::tab:!selected
+{
+    width: 65px;
+    height: 22px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    color: #B2B9C0;
+    font-family: "黑体";
+    font-size: 16px;
+}
+
+QTabWidget#retrieveTabWidget QTabBar::tab:selected
+{
+    width: 65px;
+    height: 22px;
+    margin: 5px;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00A9E9;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 16px;
+}
+
+QPushButton#mobileAccountLabelBtn_2, QPushButton#vscodeLableBtn_3, QPushButton#pwdLabelBtn_3
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #FFFFFF;
+    text-align: left;
+    padding-left: 15px;
+}
+QLineEdit#retrieveMobileAccount, QLineEdit#retrieveMobileVCode, QLineEdit#retrieveMobilePwd
+{
+    border: none;
+    lineedit-password-character: 42;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 14px;
+}
+QPushButton#retrieveMobileGetVCode
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #00A9E9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveMobileGetVCode:disabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveMobileShowPwd[showPwd="false"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_closeeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    lineedit-password-character: 42;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveMobileShowPwd[showPwd="true"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_openeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    lineedit-password-character: 42;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveMobileRetLogin, QPushButton#retrieveEMailRetLogin {
+    border: none;
+    font-family: "黑体"
+    PingFangSC-Regular;
+    font-size: 16px;
+    color: #00A9E9;
+    text-align: left;
+}
+QPushButton#retrieveMobileSubmit
+{
+    border-image: url(:/res/images/btn_signin_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#retrieveMobileSubmit:hover
+{
+    border-image: url(:/res/images/btn_signin_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#retrieveMobileSubmit:pressed
+{
+    border-image: url(:/res/images/btn_signin_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#retrieveMobileSubmit:disabled
+{
+    border-image: url(:/res/images/btn_signin_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#retrieveMobileRetLogin {
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #00A9E9;
+    text-align: left;
+}
+
+QPushButton#emailAccountLabelBtn_2, QPushButton#vscodeLableBtn_4, QPushButton#pwdLabelBtn_4 {
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #FFFFFF;
+    text-align: left;
+    padding-left: 15px;
+}
+QLineEdit#retrieveEMailAccount, QLineEdit#retrieveEMailVCode, QLineEdit#retrieveEMailPwd
+{
+    border: none;
+    lineedit-password-character: 42;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 14px;
+}
+QPushButton#retrieveEMailGetVCode
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #00A9E9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveEMailGetVCode:disabled
+{
+    font-family: "黑体";
+    font-size: 14px;
+    color: #B2B9C0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFFFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveEMailShowPwd[showPwd="false"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_closeeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    lineedit-password-character: 42;
+    text-align: right;
+    padding-right: 15px;
+}
+QPushButton#retrieveEMailShowPwd[showPwd="true"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    qproperty-icon: url(:/res/images/ic_openeye.png);
+    qproperty-iconSize: 19px 19px;
+    background: #FFFFFF;
+    lineedit-password-character: 42;
+    text-align: right;
+    padding-right: 15px;
+}
+
+QPushButton#retrieveEMailSubmit
+{
+    border-image: url(:/res/images/btn_signin_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#retrieveEMailSubmit:hover
+{
+    border-image: url(:/res/images/btn_signin_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#retrieveEMailSubmit:pressed
+{
+    border-image: url(:/res/images/btn_signin_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+QPushButton#retrieveEMailSubmit:disabled
+{
+    border-image: url(:/res/images/btn_signin_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#retrieveEMailRetLogin {
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #00A9E9;
+    text-align: left;
+}
+
+/*********************************** loginSuccPage ********************************/
+QWidget#loginSuccPage
+{
+    border: none;
+    background-color:#F0F0F0;
+}
+
+QWidget#downloadRecordContainer
+{
+    border: none;
+    background-color:#F0F0F0;
+}
+
+QWidget#downloadRecordTitle, QWidget#downloadRecordFoot, QScrollArea#scrollAreaWidgetContents, QListWidget#actionDownloadHistoryList
+{
+    border: none;
+    background: #FFFFFF;
+}
+
+QLabel#downloadRecordTitleLbl
+{
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 16px;
+    color: #395571;
+}
+
+QPushButton#downloadRecordDelBtn
+{
+    border-image: url(:/res/images/ic_delete.png);
+}
+
+QPushButton#downloadRecordDelBtn:disabled
+{
+    border-image: url(:/res/images/ic_delete_unable.png);
+}
+
+QLabel#downloadPathLbl
+{
+    color: #294765;
+    font-family: "黑体";
+    font-size: 16px;
+}
+
+QLineEdit#downloadPathModifyLineEdit
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #F4F5F5;
+    color: #294765;
+    font-family: "黑体";
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+QPushButton#downloadPathModifyBtn
+{
+    border-image: url(:/res/images/btn_modify_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#downloadPathModifyBtn:disabled
+{
+    border-image: url(:/res/images/btn_modify_unable.png);
+}
+
+QPushButton#downloadPathModifyBtn:pressed
+{
+    border-image: url(:/res/images/btn_modify_click.png);
+}
+
+QPushButton#downloadPathModifyBtn:hover
+{
+    border-image: url(:/res/images/btn_modify_hover.png);
+}
+
+QLabel#spacer
+{
+    border: none;
+    background: #F4F5F5;
+}
+
+QLabel#customerImage
+{
+    background-image: url(:/res/images/img_avatar_default.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QLabel#accountLbl {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QPushButton#logoutBtn
+{
+    border-image: url(:/res/images/btn_signout_normal.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#logoutBtn:disabled
+{
+    border-image: url(:/res/images/btn_signout_unable.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#logoutBtn:hover
+{
+    border-image: url(:/res/images/btn_signout_hover.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QPushButton#logoutBtn:pressed
+{
+    border-image: url(:/res/images/btn_signout_click.png);
+    font-family: "黑体";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QWidget#accountContainer
+{
+    background-color: #FFFFFF;
+}
+
+QPushButton#deactivate
+{
+    border: none;
+    background: transparent;
+    color: #00A9E9;
+    font-family: "黑体";
+    font-size: 16px;
+}
+
+QListWidget#actionDownloadHistoryListWidget
+{
+    background-color: #F8FAFA;
+    alternate-background-color: #ffffff;
+    border:none;
+}
+QListWidget#actionDownloadHistoryListWidget::item
+{
+    height: 35px;
+    color: #294765;
+    font:14px;
+}
+
+QScrollBar:vertical {
+    width: 10px;
+    border: none;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}
+
+
+

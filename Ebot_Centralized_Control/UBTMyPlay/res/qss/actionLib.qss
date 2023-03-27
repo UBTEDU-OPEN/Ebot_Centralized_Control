@@ -1,0 +1,161 @@
+/*******************UbtActionLibWidget 模块*********************/
+
+
+/*UbtActionLibWidget窗体背景*/
+QWidget#UbtActionLibWidget
+{
+    background-color: #F4F5F5;
+}
+
+QWidget#stackedWidget
+{
+    background-color: #F4F5F5;
+}
+
+/* 登录页 */
+QWidget#logInNotifyPage
+{
+    background-color: #FFFFFF;
+}
+
+QLabel#logInNotifyLbl
+{
+    border-image: url(:/res/images/img_login_tip.png);
+    border:0px;
+}
+
+QLabel#logInNotifyText_0, QLabel#logInNotifyText_1
+{
+    background: transparent;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #B2B9C0;
+}
+
+QPushButton#loginBtn
+{
+    border-image: url(:/res/images/btn_login_normal.png);
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+QPushButton#loginBtn:disable
+{
+    border-image: url(:/res/images/btn_login_unable.png);
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+QPushButton#loginBtn:hover
+{
+    border-image: url(:/res/images/btn_login_hover.png);
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+QPushButton#loginBtn:pressed
+{
+    border-image: url(:/res/images/btn_login_click.png);
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* 动作列表页 */
+QWidget#actionOnSvrListPage {
+    background-color: #F4F5F5;
+}
+
+ScrollArea#actionOnSvrListPageScrollArea, QWidget#actionScrollAreaWidgetContents
+{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+QWidget#searchTitile
+{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+QLabel#actionLbl
+{
+    background-color: #FFFFFF;
+    border: none;
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
+    color: #395571;
+}
+
+QLabel#noActionIconLbl
+{
+    border-image: url(:/res/images/img_search_nodate.png);
+}
+
+QLabel#noActionTextLbl
+{
+    font-family: "黑体";
+    font-size: 16px;
+    color: #B2B9C0;
+}
+
+QPushButton#searchIconBtn[showAlone="true"]
+{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    qproperty-icon: url(:/res/images/ic_search.png);
+    qproperty-iconSize: 16px 16px;
+    background-color: #F4F5F5;
+}
+
+QPushButton#searchIconBtn[showAlone="false"]
+{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    qproperty-icon: url(:/res/images/ic_search.png);
+    qproperty-iconSize: 16px 16px;
+    background-color: #F4F5F5;
+}
+
+QLineEdit#searchLineEdit
+{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #F4F5F5;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #294765;
+}
+
+QScrollBar:vertical {
+    width: 10px;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 0px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #E0E5E7;
+    border-radius: 2px;
+    max-height: 50px;
+    min-height: 50px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: transparent;
+}
+
+
+

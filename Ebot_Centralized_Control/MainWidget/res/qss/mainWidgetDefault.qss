@@ -1,0 +1,231 @@
+
+/*******************MainWidget 模块*********************/
+
+QMainWindow#MainWindow
+{
+    background: #F0F0F0;
+}
+
+QWidget#centralWidget
+{
+    background: transparent;
+}
+
+QStackedWidget#centerStackedWidget
+{
+    background: #F0F0F0;
+    width:0px;
+    height:0px;
+}
+
+QWidget#tabMyPlay
+{
+    background-color: #F0F0F0;
+}
+
+/************ titlebar 窗体 ************/
+
+/*窗体标题栏背景*/
+QWidget#titlebar
+{
+    background-color: #F4F5F5;
+}
+
+QLabel#labelTitle
+{
+    font-family: "黑体";
+    font-size: 22px;
+    color: #294765;
+}
+
+/* 我的演出 */
+QPushButton#pBMyPlay
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QPushButton#pBMyPlay:checked
+{
+    font-family: "黑体";
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-image: url(:/res/images/btn_nav_selected.png);
+}
+
+/* 我的下载 */
+QPushButton#pBMyDownLoad
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QPushButton#pBMyDownLoad:checked
+{
+    font-family: "黑体";
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-image: url(:/res/images/btn_nav_selected.png);
+}
+
+/* 我的定制 */
+QPushButton#pBMyCustom
+{
+    background: transparent;
+    border: none;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #294765;
+}
+
+QPushButton#pBMyCustom:checked
+{
+    font-family: "黑体";
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-image: url(:/res/images/btn_nav_selected.png) 50% 30%;
+}
+
+QLabel#labelSpace
+{
+    background-color: #ffffff;
+}
+
+QLabel#labelLogo
+{
+    font-family: "黑体";
+    font-size: 16px;
+    color: #ffffff;
+}
+
+QPushButton#pBConnect[connected="true"] {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 40px 24px;
+    qproperty-icon: url(:/res/images/ic_connected.png);
+    border-image: url(:/res/images/btn_connected_normal.png);
+}
+QPushButton#pBConnect[connected="true"]:hover {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 41px 24px;
+    qproperty-icon: url(:/res/images/ic_connected.png);
+    border-image: url(:/res/images/btn_connected_hover.png);
+}
+QPushButton#pBConnect[connected="true"]:pressed {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 41px 24px;
+    qproperty-icon: url(:/res/images/ic_connected.png);
+    border-image: url(:/res/images/btn_connected_click.png);
+}
+QPushButton#pBConnect[connected="true"]:disabled {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 41px 24px;
+    qproperty-icon: url(:/res/images/ic_connected.png);
+    border-image: url(:/res/images/btn_connected_unable.png);
+}
+
+QPushButton#pBConnect[connected="false"] {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 40px 24px;
+    qproperty-icon: url(:/res/images/ic_disconnect.png);
+    border-image: url(:/res/images/btn_disconnect_normal.png);
+}
+QPushButton#pBConnect[connected="false"]:hover {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 41px 24px;
+    qproperty-icon: url(:/res/images/ic_disconnect.png);
+    border-image: url(:/res/images/btn_disconnect_hover.png);
+}
+QPushButton#pBConnect[connected="false"]:pressed {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 41px 24px;
+    qproperty-icon: url(:/res/images/ic_disconnect.png);
+    border-image: url(:/res/images/btn_disconnect_click.png);
+}
+QPushButton#pBConnect[connected="false"]:disabled {
+    font-family: "黑体";
+    font-size: 16px;
+    color: #FFFFFF;
+    qproperty-iconSize: 41px 24px;
+    qproperty-icon: url(:/res/images/ic_disconnect.png);
+    border-image: url(:/res/images/btn_disconnect_unable.png);
+}
+
+/*关闭 按钮*/
+QPushButton#pBClose
+{
+    border-image: url(:/res/images/ic_close.png);
+}
+QPushButton#pBClose:hover
+{
+    border-image: url(:/res/images/ic_close.png);
+}
+QPushButton#pBClose:pressed
+{
+    border-image: url(:/res/images/ic_close.png);
+}
+
+/*最小化 按钮*/
+QPushButton#pBMin
+{
+    border-image: url(:/res/images/ic_narrow.png);
+}
+QPushButton#pBMin:hover
+{
+    border-image: url(:/res/images/ic_narrow.png);
+}
+QPushButton#pBMin:pressed
+{
+    border-image: url(:/res/images/ic_narrow.png);
+}
+
+/* setting button*/
+QPushButton#settingBtn
+{
+    border-image: url(:/res/images/ic_setting_normal.png);
+}
+QPushButton#settingBtn:hover
+{
+    border-image: url(:/res/images/ic_setting_normal.png);
+}
+QPushButton#settingBtn:pressed
+{
+    border-image: url(:/res/images/ic_setting_normal.png);
+}
+
+/* customer center button*/
+QPushButton#customerCenterBtn
+{
+    border-image: url(:/res/images/ic_user_normal.png);
+}
+QPushButton#customerCenterBtn:hover
+{
+    border-image: url(:/res/images/ic_user_normal.png);
+}
+QPushButton#customerCenterBtn:pressed
+{
+    border-image: url(:/res/images/ic_user_normal.png);
+}
+
